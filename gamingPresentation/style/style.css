@@ -1,0 +1,102 @@
+
+
+*{
+    color: black;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+body{
+    background-color: rgb(33, 33, 33);
+    position : absolute; width:100%;
+  height:100%; z-index:-1;
+}
+
+html,
+body { height: 100%;
+}
+.parent {
+margin-top: 10%;
+height: 30%;
+animation: myAnim 2s ease 0s 1 normal forwards;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.child {
+background-color: white;
+width: 615px;
+box-shadow: 5px 5px green;
+height: 250px;
+}
+
+.child p, h1{
+    color: rgb(56, 56, 56);
+    text-align: center;
+    vertical-align: middle;
+  }
+
+
+  
+  .typewriter h1 {
+    color: rgb(41, 41, 41);
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .05em; 
+    animation: 
+      typing 4s steps(35, end),
+      blink-caret 1.5s step-end infinite;
+    font-size: 23px;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    25% { border-color: green }
+  }
+
+.imgBox{
+
+    display: flex;
+    align-items: center;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    justify-content: center;
+}
+
+#particles-js {
+  position : absolute;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
